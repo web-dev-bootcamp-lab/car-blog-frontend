@@ -6,7 +6,7 @@ export function Navbar() {
   const pathname = usePathname();
   const isActive = (path) => pathname === path;
   return (
-    <header className="w-full px-12 py-4 border-t border text-sm bg-[rgb(35,37,54)] text-gray-200 ">
+    <header className="w-full px-12 py-4 border-t border-none text-sm bg-[rgb(35,37,54)] text-gray-200 ">
       <div className="flex items-center justify-between px-5 py-4">
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 rounded-full bg-[#FFD6D6]"></div>
@@ -40,8 +40,8 @@ export function Navbar() {
           </Link>
           <Link
             href="/subscribe"
-            className={`hover:text-[#ff595f] transition-colors duration-200 ${isActive("/subscribe") ? "text-[#ff595f]" : ""}`}
-           >
+            className={`h-14 px-12 py-4 rounded-md border border-none bg-white text-[#232536] hover:text-[#ff595f] transition-colors duration-200 ${isActive("/subscribe") ? "text-[#ff595f]" : ""}`}
+        >
             Subscribe
           </Link>
         </nav>

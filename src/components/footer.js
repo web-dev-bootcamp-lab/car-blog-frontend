@@ -13,7 +13,7 @@ export function Footer() {
   const pathname = usePathname();
   const isActive = (path) => pathname === path;
   return (
-    <footer className="w-full px-12 py-4 border-t border text-sm bg-[rgb(35,37,54)] text-gray-200 ">
+    <footer className="w-full px-12 py-4 border-t border-none text-sm bg-[rgb(35,37,54)] text-gray-200 ">
       <div className="flex items-center justify-between px-5 py-4">
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 rounded-full bg-[#FFD6D6]"></div>
