@@ -13,14 +13,14 @@ export function Footer() {
   const pathname = usePathname();
   const isActive = (path) => pathname === path;
   return (
-    <footer className="w-full px-12 py-4 border-t border-none text-sm bg-[rgb(35,37,54)] text-gray-200 ">
+    <footer className="w-full px-12 py-4 text-sm bg-[rgb(35,37,54)] text-gray-200 ">
       <div className="flex items-center justify-between px-5 py-4">
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 rounded-full bg-[#FFD6D6]"></div>
           <span className="text-xl">LOGO</span>
         </div>
 
-        <nav className="flex items-center gap-6 text-lg font-bold">
+        <nav className="flex items-center gap-4 text-lg font-bold">
           <Link
             href="/"
             className="hover:text-[#ff595f] transition-colors duration-200"
@@ -54,29 +54,29 @@ export function Footer() {
         </nav>
       </div>
 
-      <div className="w-[97%] mx-auto my-12 flex flex-wrap items-center justify-between bg-[#2A2B39] px-12 py-18">
-        <h2 className="lg:w-3/5 max-w-3xl text-left text-white text-5xl font-bold leading-tight">
+      <div className="w-[97%] mx-auto my-4 flex items-center justify-between bg-[#2A2B39] px-8 py-14">
+        <h2 className="lg:w-3/5 max-w-3xl text-left text-white text-4xl font-bold leading-tight">
           Subscribe to our news letter to get latest updates and news
         </h2>
 
-        <form action="" className="flex  items-center gap-6">
+        <form action="" className="flex  items-center gap-4">
           <input
             type="text"
             name="email"
             id="email"
-            className="h-14 pl-6 pr-28 py-6 rounded-md border border-gray-300 bg-white text-gray-800 font-semibold text-xl outline-0 "
+            className="h-1 p-6 py-6 rounded-md border border-gray-300 bg-white text-gray-800 font-semibold text-xl outline-0 "
             placeholder="example@email.com"
           />
           <button
             type="submit"
-            className="flex items-center gap-1 h-14 px-12 py-4 rounded-md border border-none bg-[#ff595f] text-white font-semibold text-xl cursor-pointer hover:bg-[#f04450]"
+            className="flex items-center gap-1 h-12 px-6 py-4 rounded-md border border-none bg-[#ff595f] text-white font-semibold text-xl cursor-pointer hover:bg-[#f04450]"
           >
             Subscribe <Send className="w-4 h-4" />
           </button>
         </form>
       </div>
 
-      <div className="flex flex-wrap items-end justify-between p-6 pt-0.5 -mt-6">
+      <div className="flex flex-wrap items-end justify-between p-6 pt-0.5">
         <div className="text-lg leading-relaxed text-gray-300">
           <p>Finestreet 118 2561 abctown</p>
           <p>example@yourmail.com&nbsp;&nbsp; 001 213 454 442</p>

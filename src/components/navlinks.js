@@ -6,14 +6,14 @@ export function Navbar() {
   const pathname = usePathname();
   const isActive = (path) => pathname === path;
   return (
-    <header className="w-full px-12 py-4 border-t border-none text-sm bg-[rgb(35,37,54)] text-gray-200 ">
+    <header className="w-full px-12 text-sm bg-[rgb(35,37,54)] text-gray-200 ">
       <div className="flex items-center justify-between px-5 py-4">
         <div className="flex items-center gap-4">
           <div className="h-12 w-12 rounded-full bg-[#FFD6D6]"></div>
           <span className="text-xl">LOGO</span>
         </div>
 
-        <nav className="flex items-center gap-12 text-lg font-semibold">
+        <nav className="flex items-center gap-6 text-lg font-semibold">
           <Link
             href="/"
             className={`hover:text-[#ff595f] transition-colors duration-200 ${isActive("/") ? "text-[#ff595f]" : ""}`}
@@ -40,7 +40,7 @@ export function Navbar() {
           </Link>
           <Link
             href="/subscribe"
-            className={`h-14 px-12 py-4 rounded-md border border-none bg-white text-[#232536] hover:text-[#ff595f] transition-colors duration-200 ${isActive("/subscribe") ? "text-[#ff595f]" : ""}`}
+            className={`h-12 px-8 py-3 rounded-md border border-none bg-white text-[#232536] hover:text-[#ff595f] transition-colors duration-200 ${isActive("/subscribe") ? "text-[#ff595f]" : ""}`}
         >
             Subscribe
           </Link>

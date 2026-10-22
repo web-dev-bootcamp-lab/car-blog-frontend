@@ -25,7 +25,9 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full border-0 flex flex-col">
         <Navbar />
-        <main className="flex-1 px-12 py-8 sm:px-12 sm:py-12">{children}</main>
+        <main className="flex-1 px-12 py-8 sm:px-12 sm:py-12 max-w-full mx-auto w-full">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
