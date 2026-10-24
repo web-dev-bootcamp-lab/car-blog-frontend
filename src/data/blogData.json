@@ -1,0 +1,214 @@
+{
+"siteMetadata": {
+"brandName": "LOGO",
+"navLinks": [
+{ "id": "nav-1", "label": "Home", "path": "/" },
+{ "id": "nav-2", "label": "Blog", "path": "/blog" },
+{ "id": "nav-3", "label": "About us", "path": "/about" },
+{ "id": "nav-4", "label": "Contact Us", "path": "/contact" }
+],
+"footer": {
+"newsletterHeading": "Subscribe to our news letter to get latest updates and news",
+"address": "Finestreet 118 2561 abctown",
+"email": "example@yourmail.com",
+"phone": "001 213 454 442",
+"socials": [
+{ "id": "soc-1", "platform": "Facebook", "url": "#" },
+{ "id": "soc-2", "platform": "Twitter", "url": "#" },
+{ "id": "soc-3", "platform": "Instagram", "url": "#" },
+{ "id": "soc-4", "platform": "LinkedIn", "url": "#" }
+]
+}
+},
+"hero": {
+"id": "hero-main",
+"headlineLines": [
+"Your Journey",
+"Your Car",
+"Your Way"
+],
+"description": "Discover in-depth reviews, maintenance guides, and the latest innovations shaping the modern automotive world. Whether you are a daily commuter or a track-day enthusiast, find everything you need for the road ahead.",
+"ctaText": "Subscribe",
+"backgroundImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1400&auto=format&fit=crop"
+},
+"latestPost": {
+"id": "post-latest-1",
+"title": "Why Classic Air-Cooled Engines Still Capture Every Enthusiast's Heart",
+"author": "John Doe",
+"date": "March 12, 2026",
+"excerpt": "Decades after rolling off the assembly line, vintage compact classics remain some of the most sought-after collector vehicles. Their mechanical simplicity, unmistakable silhouette, and raw driving feedback offer an experience modern computers simply cannot replicate.",
+"secondaryExcerpt": "From weekend restoration projects to concourse-level builds, explore what keeps the air-cooled community thriving across generations.",
+"image": "https://images.unsplash.com/photo-1489824904134-891ab64532f1?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+"ctaText": "Read more",
+"slug": "/blog/classic-air-cooled-engines"
+},
+"trendingBlogs": [
+{
+"id": "trend-1",
+"author": "John Doe",
+"date": "Aug 23, 2025",
+"title": "How Next-Gen Solid-State Batteries Will Redefine EV Range and Charging Speeds",
+"isHighlighted": false,
+"slug": "/blog/solid-state-batteries-ev"
+},
+{
+"id": "trend-2",
+"author": "John Doe",
+"date": "Aug 23, 2025",
+"title": "Top 5 Aerodynamic Upgrades That Actually Improve Track Performance and Fuel Economy",
+"isHighlighted": true,
+"slug": "/blog/aerodynamic-upgrades-track-performance"
+},
+{
+"id": "trend-3",
+"author": "John Doe",
+"date": "Aug 23, 2025",
+"title": "Manual vs. Dual-Clutch Transmissions: Which Gearboxes Hold Their Value Best?",
+"isHighlighted": false,
+"slug": "/blog/manual-vs-dual-clutch-value"
+},
+{
+"id": "trend-4",
+"author": "John Doe",
+"date": "Aug 23, 2025",
+"title": "Essential Pre-Winter Maintenance Checks Every Car Owner Should Perform at Home",
+"isHighlighted": false,
+"slug": "/blog/pre-winter-maintenance-checks"
+}
+],
+"newTechnologyRow1": [
+{
+"id": "tech-1",
+"title": "A Review Of Cars With Advanced Infotainment Systems",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+"slug": "/blog/advanced-infotainment-systems"
+},
+{
+"id": "tech-2",
+"title": "A Deep Dive Into Classic and Modern Sports Cars",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://plus.unsplash.com/premium_photo-1682125726825-3c0049c0aae3?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+"slug": "/blog/deep-dive-sports-cars"
+},
+{
+"id": "tech-3",
+"title": "Reviewing Vintage Cruisers With The Best Resale Value",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://plus.unsplash.com/premium_photo-1682125840276-f47b511bf58c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+"slug": "/blog/vintage-cruisers-resale-value"
+},
+{
+"id": "tech-4",
+"title": "Restoring Iconic Compact Cars For Modern City Streets",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://images.unsplash.com/photo-1511407397940-d57f68e81203?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+"slug": "/blog/restoring-iconic-compact-cars"
+}
+],
+"categories": [
+{
+"id": "cat-1",
+"title": "Car Reviews",
+"description": "Unbiased road tests, performance metrics, and real-world ownership impressions.",
+"image": "https://25artstreet.nl/cdn/shop/files/2725MT-standaard_a8c9a702-f43e-4fcc-a209-5fabe1091b9f.jpg?v=1783646685&width=1400",
+"slug": "/category/car-reviews"
+},
+{
+"id": "cat-2",
+"title": "Maintenance Tips",
+"description": "Step-by-step DIY guides to keep your engine running smoothly and reliably.",
+"image": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=300&auto=format&fit=crop",
+"slug": "/category/maintenance-tips"
+},
+{
+"id": "cat-3",
+"title": "Car Modifications",
+"description": "From suspension tuning to custom wheels, explore upgrades that elevate your build.",
+"image": "https://plus.unsplash.com/premium_photo-1663040398972-7b62b2b1eade?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+"slug": "/category/car-modifications"
+},
+{
+"id": "cat-4",
+"title": "Driving Tips",
+"description": "Master defensive driving, track cornering techniques, and fuel-saving habits.",
+"image": "https://i.pinimg.com/736x/ed/4a/39/ed4a398092c1f68b0588fea18015eaa0.jpg",
+"slug": "/category/driving-tips"
+}
+],
+"testimonials": {
+"sectionTag": "TESTIMONIALS",
+"heading": "What people say about our blog",
+"subheading": "Read feedback from our community of gearheads, daily drivers, and automotive engineers.",
+"items": [
+{
+"id": "test-1",
+"quote": "The maintenance guides and honest car reviews on this platform saved me thousands when shopping for my weekend track car. The technical breakdowns are clear and practical.",
+"author": "Jonathan Vallem",
+"location": "New York, USA",
+"avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+},
+{
+"id": "test-2",
+"quote": "I love how balanced the articles are between classic mechanical craftsmanship and emerging electric vehicle tech. It is my go-to morning read.",
+"author": "Sarah Jenkins",
+"location": "Austin, USA",
+"avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+}
+]
+},
+"newTechnologyRow2": [
+{
+"id": "tech-5",
+"title": "Off-Road SUVs Built To Conquer Desert Trails And Rocky Passes",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=600&auto=format&fit=crop",
+"slug": "/blog/off-road-suvs-desert-trails"
+},
+{
+"id": "tech-6",
+"title": "Grand Tourers Designed For High-Speed Cross-Country Comfort",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?q=80&w=600&auto=format&fit=crop",
+"slug": "/blog/grand-tourers-cross-country"
+},
+{
+"id": "tech-7",
+"title": "Why Subcompact City Hatchbacks Are Making A Huge Comeback",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=600&auto=format&fit=crop",
+"slug": "/blog/subcompact-city-hatchbacks"
+},
+{
+"id": "tech-8",
+"title": "Ergonomics And Digital Cockpits: Inside Modern Driver Cabins",
+"author": "Dasteen",
+"authorAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
+"date": "Jan 10, 2026",
+"readTime": "3 Min Read",
+"image": "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=600&auto=format&fit=crop",
+"slug": "/blog/ergonomics-digital-cockpits"
+}
+]
+}
