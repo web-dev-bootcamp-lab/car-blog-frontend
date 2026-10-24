@@ -2,6 +2,8 @@ import { Send } from "lucide-react";
 import Link from "next/link";
 import blogData from "@/data/blogData.json";
 import LatestSection from "@/components/hero";
+import NewTechSection from "@/components/newTech";
+import CategorySection from "@/components/category";
 
 export default function Home() {
   return (
@@ -41,6 +43,12 @@ export default function Home() {
 
       {/* @param {{data: LatestPost}} props */}
       <LatestSection data={blogData.latestPost} />
+
+      {/* @param {{data: NewTech}} props */}
+      <NewTechSection data={blogData.newTechnology} />
+
+      {/* @param {{data: Category}} props */}
+      <CategorySection data={blogData.categories} />
     </>
   );
 }

@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default async function LatestSection({ data }) {
   return (
-    <section className="max-w-full mx-auto mt-24">
+    <section className="max-w-full mx-auto m-24">
       {/* grid wrapper */}
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
         {/* latest-left column */}
