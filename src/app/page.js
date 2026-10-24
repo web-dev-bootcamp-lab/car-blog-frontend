@@ -4,6 +4,7 @@ import blogData from "@/data/blogData.json";
 import LatestSection from "@/components/hero";
 import NewTechSection from "@/components/newTech";
 import CategorySection from "@/components/category";
+import TestimonialSection from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -49,6 +50,12 @@ export default function Home() {
 
       {/* @param {{data: Category}} props */}
       <CategorySection data={blogData.categories} />
+
+      {/* @param {{data: Testimonial}} props */}
+      <TestimonialSection data={blogData.testimonials} />
+
+      {/* @param {{data: NewTech}} props */}
+      <NewTechSection data={blogData.newTechnologyRow2} />
     </>
   );
 }

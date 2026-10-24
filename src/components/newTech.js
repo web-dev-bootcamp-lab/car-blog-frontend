@@ -19,7 +19,7 @@ export default async function NewTechSection({ data }) {
       {/* section-header */}
       <div className="flex justify-between">
         <h2 className="text-2xl font-bold text-[#000000] mb-4">
-          New Technology{" "}
+          New Technology
           <span className="text-2xl font-bold text-[#000000] pl-1">—</span>
         </h2>
         <Link

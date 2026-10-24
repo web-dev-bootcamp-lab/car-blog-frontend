@@ -157,14 +157,17 @@
 "id": "test-1",
 "quote": "The maintenance guides and honest car reviews on this platform saved me thousands when shopping for my weekend track car. The technical breakdowns are clear and practical.",
 "author": "Jonathan Vallem",
-"location": "New York, USA",
+"location": "New York",
+"country": "USA",
 "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
 },
 {
 "id": "test-2",
 "quote": "I love how balanced the articles are between classic mechanical craftsmanship and emerging electric vehicle tech. It is my go-to morning read.",
 "author": "Sarah Jenkins",
-"location": "Austin, USA",
+"location": "Austin",
+"country": "USA",
+
 "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
 }
 ]
