@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default async function LatestSection({ data }) {
   return (
-    <section className="max-w-full mx-auto m-24">
+    <section className="max-w-full mx-auto sm:m-8 lg:m-24 sm:mt-20">
       {/* grid wrapper */}
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
         {/* latest-left column */}
@@ -55,7 +55,7 @@ export default async function LatestSection({ data }) {
         </article>
 
         {/* latest-right column */}
-        <article className="lg:col-span-5 flex flex-col">
+        <article className="lg:col-span-5 flex flex-col sm:hidden">
           <div className="flex justify-between">
             <h2 className="text-2xl font-bold text-[#000000] mb-4">
               Trending Blog
