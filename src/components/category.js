@@ -14,7 +14,7 @@ export default async function CategorySection({ data }) {
   return (
     <>
       {/* section-header */}
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between sm:mt-4 lg:mt-4 sm:mx-4">
         <h2 className="text-2xl font-bold text-[#000000] my-8">
           Category
           <span className="text-2xl font-bold text-[#000000] pl-2">—</span>
@@ -28,7 +28,7 @@ export default async function CategorySection({ data }) {
       </div>
 
       {/* newTech-cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-12 -m-2">
+      <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 sm:gap-6 lg:gap-12 sm:mx-6 lg:-m-2">
         {data.map((data) => (
           <div
             key={data.id}
