@@ -39,23 +39,23 @@ export default function TestimonialSection({ data }) {
 
   return (
     <>
-      <section className="sm:-mx-4 lg:-mx-12 sm:my-12 lg:my-24 sm:px-8 lg:px-28 sm:py-6 lg:py-12 bg-[#232536]">
+      <section className="-mx-4 lg:-mx-26 my-4 md:my-12 lg:my-24 px-6 lg:px-28 py-6 lg:py-12 bg-[#232536]">
         {/* grid wrapper */}
         <div className="grid grid-cols-1 md:gap-4 lg:gap-20 md:pl-2 lg:pl-4 lg:grid-cols-9 text-white">
           {/* Heading */}
-          <div className="flex flex-col lg:col-span-4 gap-4 md:pt-4 lg:pt-12 lg:border-r lg:pr-12 lg:border-[#FBF6EA]">
-            <p className="text-base font-semibold">{data.sectionTag}</p>
-            <h2 className="text-4xl font-bold leading-tight">{data.heading}</h2>
-            <h2 className="text-base font-normal">{data.subheading}</h2>
+          <div className="flex flex-col lg:col-span-4 gap-2 md:pt-4 lg:pt-12 lg:border-r lg:pr-12 lg:border-[#FBF6EA]">
+            <p className="text-sm md:text-base lg:text-base font-semibold">{data.sectionTag}</p>
+            <h2 className="text-2xl md:text-4xl lg:text-4xl font-bold leading-tight">{data.heading}</h2>
+            <h2 className="text-sm md:text-base lg::text-base font-normal">{data.subheading}</h2>
           </div>
 
           {/* quote */}
-          <div className="lg:col-span-5 mr-8 flex justify-between ">
+          <div className="lg:col-span-5 mt-2 mr-8 flex justify-between ">
             <div
               key={currentItem.id}
               className="flex flex-col justify-between h-full"
             >
-              <p className="text-2xl text-gray-300 font-bold leading-8 md:-mb-24 lg:mb-4 ">
+              <p className="text-lg md:text-2xl lg:text-2xl text-gray-300 font-bold  lg:leading-8 -mb-24 lg:mb-4 ">
                 {currentItem.quote}
               </p>
 
@@ -64,10 +64,10 @@ export default function TestimonialSection({ data }) {
                 <div className="flex gap-4">
                   <img
                     src={currentItem.avatar}
-                    className="w-14 h-14 rounded-full shrink-0 object-cover"
+                    className="w-10 h-10 lg:w-14 lg:h-14 md:w-14 md:h-14 rounded-full shrink-0 object-cover"
                   />
                   <div className="flex flex-col">
-                    <p className="text-2xl font-bold">{currentItem.author}</p>
+                    <p className="text-base md:text-lg lg:text-2xl font-bold">{currentItem.author}</p>
                     <p className="text-sm text-gray-300">
                       {currentItem.location},
                     </p>
@@ -82,14 +82,14 @@ export default function TestimonialSection({ data }) {
                   <button
                     type="button"
                     onClick={previousTestimonial}
-                    className="p-3 w-12 h-12 rounded-full items-center justify-center bg-white group hover:bg-[#FF5959] hover:scale-125 transition-all duration-300"
+                    className="p-1 lg:p-3 lg:w-12 lg:h-12 md:p-3 md:w-12 md:h-12  rounded-full items-center justify-center bg-white group hover:bg-[#FF5959] hover:scale-125 transition-all duration-300"
                   >
                     <MoveLeft className="text-[#232536] group-hover:text-white" />
                   </button>
                   <button
                     type="button"
                     onClick={nextTestimonial}
-                    className="p-3 w-12 h-12 rounded-full items-center justify-center bg-white group hover:bg-[#FF5959] hover:scale-125 transition-all duration-300"
+                    className="p-1 lg:p-3 lg:w-12 lg:h-12 md:p-3 md:w-12 md:h-12  rounded-full items-center justify-center bg-white group hover:bg-[#FF5959] hover:scale-125 transition-all duration-300"
                   >
                     <MoveRight className="text-[#232536] group-hover:text-white " />
                   </button>
