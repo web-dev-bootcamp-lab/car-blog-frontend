@@ -6,7 +6,7 @@ export default async function NewTechSection({ data }) {
     <>
       {/* section-header */}
       <div className="flex justify-between sm:mx-4 sm:pt-6">
-        <h2 className="text-2xl font-bold text-[#000000] mb-4">
+        <h2 className="md:text-xl text-lg lg:text-2xl font-bold text-[#000000] mb-4">
           New Technology
           <span className="text-2xl font-bold text-[#000000] pl-1">—</span>
         </h2>
