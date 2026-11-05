@@ -9,20 +9,20 @@ import TestimonialSection from "@/components/testimonials";
 export default function Home() {
   return (
     <>
-      <section className="w-full min-h-fit flex items-center overflow-hidden">
+      <section className="relative w-full min-h-72 md:min-h-115 lg:min-h-145 flex items-center overflow-hidden">
         {/* Background Image */}
-        <div className="hero-img absolute inset-0 top-11 lg:top-20">
+        <div className="hero-img absolute inset-0">
           <img
-            className="w-full  h-[37%] lg:h-[78.5%] object-cover"
+            className="w-full h-full object-cover"
             src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=983&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-            alt=""
+            alt="Hero car background"
           />
-          <div className="absolute inset-0 w-full h-[35%] md:h-[37%] lg:h-[78.5%] bg-linear-to-r from-black/80 via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-transparent"></div>
         </div>
 
         {/* hero content */}
-        <div className="hero-text relative z-10 text-white flex flex-col justify-center p-2 pt-4 gap-3 md:gap-6 lg:px-6 lg:gap-8">
-          <strong className="max-w-3xl text-left text-white text-lg md:text-5xl lg:text-6xl font-bold leading-tight">
+        <div className="hero-text relative z-10 text-white flex flex-col justify-center px-4 sm:px-6 lg:px-12 py-8 md:py-12 lg:py-16 gap-3 md:gap-6 lg:gap-8">
+          <strong className="max-w-3xl text-left text-white text-2xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Your Journey <br /> Your Car <br />
             Your Way
           </strong>
@@ -35,9 +35,9 @@ export default function Home() {
           </p>
           <button
             type="submit"
-            className="flex items-center gap-1 w-fit px-2 py-1  md:px-3 md:py-1.5 lg:px-6 lg:py-3 rounded-md border border-none bg-[#ff595f] text-white font-semibold text-xs md:text-base lg:text-xl cursor-pointer hover:bg-[#f04450]"
+            className="flex items-center gap-1 w-fit px-3 py-1.5 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-md border border-none bg-[#ff595f] text-white font-semibold text-xs md:text-base lg:text-xl cursor-pointer hover:bg-[#f04450]"
           >
-            Subscribe <Send className="w-2 h-2 md:w-5 md:h-5" />
+            Subscribe <Send className="w-3 h-3 md:w-5 md:h-5" />
           </button>
         </div>
       </section>

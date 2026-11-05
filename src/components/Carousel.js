@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Section, Send } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
 
 /**
  * @typedef {object} NewTech
@@ -33,17 +32,18 @@ export default function Carousel({ data }) {
         !isHovering &&
         scrollHandler.scrollWidth > scrollHandler.clientWidth
       ) {
-        scrollHandler.scrollLeft += 1;
-
         if (
-          scrollHandler.scrollLeft + scrollHandler.clientWidth >=
-          scrollHandler.scrollWidth
+          scrollHandler.scrollLeft >=
+          scrollHandler.scrollWidth - scrollHandler.clientWidth - 1
         ) {
           scrollHandler.scrollLeft = 0;
+        } else {
+          scrollHandler.scrollLeft += 0.5;
         }
       }
       animationFrameId = requestAnimationFrame(scroll);
     };
+
     animationFrameId = requestAnimationFrame(scroll);
 
     return () => cancelAnimationFrame(animationFrameId);
@@ -56,12 +56,12 @@ export default function Carousel({ data }) {
       onMouseLeave={() => setIsHovering(false)}
       onTouchStart={() => setIsHovering(true)}
       onTouchEnd={() => setIsHovering(false)}
-      className="flex overflow-x-auto gap-4 lg:grid lg:grid-cols-4 grid-cols-2 sm:p-1 sm:px-8 sm:gap-6 lg:gap-4 lg:-m-2 lg:overflow-x-visible lg:snap-none scrollbar-hide"
+      className="flex overflow-x-auto gap-4 md:gap-6 lg:grid lg:grid-cols-4 lg:gap-6 lg:overflow-x-visible py-1 scrollbar-hide"
     >
       {data?.map((item) => (
         <div
           key={item.id}
-          className="flex-none w-60 md:w-74 lg:w-auto flex flex-col h-full min-w-0 p-3 bg-[#F4F0F8] rounded-lg group"
+          className="flex-none w-64 md:w-72 lg:w-auto flex flex-col h-full min-w-0 p-3 bg-[#F4F0F8] rounded-lg group"
         >
           {/* post-image */}
           <Link
@@ -79,14 +79,14 @@ export default function Carousel({ data }) {
           <div className="flex flex-col">
             <Link
               href={item.slug}
-              className="group-hover:text-[#FF5959] font-semibold text-lg  line-clamp-2 leading-6 mb-3 md:mb-6 lg:mb-6"
+              className="group-hover:text-[#FF5959] font-semibold text-lg line-clamp-2 leading-6 mb-3 md:mb-6 lg:mb-6"
             >
               {item.title}
             </Link>
           </div>
 
           {/* post-metadata */}
-          <div className="flex  items-center gap-3 mt-auto">
+          <div className="flex items-center gap-3 mt-auto">
             <img
               src={item.authorAvatar}
               alt={item.author || "Author avatar"}
