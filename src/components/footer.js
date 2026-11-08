@@ -18,7 +18,7 @@ export function Footer() {
         <Link href="/" className="flex items-center gap-4">
           <div className="h-8 w-8 lg:h-12 lg:w-12 rounded-full bg-[#FFD6D6]"></div>
           <span className="text-base sm:text-lg lg:text-xl font-bold tracking-tight">
-            LOGO
+            Car Blog
           </span>
         </Link>
 

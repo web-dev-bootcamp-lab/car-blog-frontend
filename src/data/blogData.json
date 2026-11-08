@@ -1,6 +1,6 @@
 {
 "siteMetadata": {
-"brandName": "LOGO",
+"brandName": "Car Blog",
 "navLinks": [
 { "id": "nav-1", "label": "Home", "path": "/" },
 { "id": "nav-2", "label": "Blog", "path": "/blog" },

@@ -23,10 +23,12 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full h-14 sm:h-12 lg:h-20 px-4 sm:px-6 lg:px-12 text-sm bg-[rgb(35,37,54)] text-gray-200">
       <div className="flex items-center justify-between h-full lg:px-5 lg:py-4">
-        {/* Logo */}
+        {/* Car Blog */}
         <Link href="/" className="flex items-center gap-4">
           <div className="h-8 w-8 sm:h-8 sm:w-8 lg:h-12 lg:w-12 rounded-full bg-[#FFD6D6] shrink-0"></div>
-          <span className="text-base lg:text-xl font-bold tracking-tight">LOGO</span>
+          <span className="text-base lg:text-xl font-bold tracking-tight">
+            Car Blog
+          </span>
         </Link>
 
         {/* Desktop View */}
