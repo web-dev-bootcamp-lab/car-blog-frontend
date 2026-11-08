@@ -1,0 +1,12 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

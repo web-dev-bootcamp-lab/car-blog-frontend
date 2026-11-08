@@ -1,7 +1,61 @@
+import { Send } from "lucide-react";
+import Link from "next/link";
+import blogData from "@/data/blogData.json";
+import LatestSection from "@/components/hero";
+import NewTechSection from "@/components/newTech";
+import CategorySection from "@/components/category";
+import TestimonialSection from "@/components/testimonials";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
-  )
+    <>
+      <section className="relative w-full min-h-72 md:min-h-115 lg:min-h-145 flex items-center overflow-hidden">
+        {/* Background Image */}
+        <div className="hero-img absolute inset-0">
+          <img
+            className="w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=983&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Hero car background"
+          />
+          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-transparent"></div>
+        </div>
+
+        {/* hero content */}
+        <div className="hero-text relative z-10 text-white flex flex-col justify-center px-4 sm:px-6 lg:px-12 py-8 md:py-12 lg:py-16 gap-3 md:gap-6 lg:gap-8">
+          <strong className="max-w-3xl text-left text-white text-2xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Your Journey <br /> Your Car <br />
+            Your Way
+          </strong>
+          <p className="text-xs md:text-base lg:text-lg max-w-2/3 md:max-w-lg line-clamp-3 md:line-clamp-3 lg:line-clamp-none lg:max-w-2xl">
+            Lorem ipsum dolor sit amet consectetur. Diam volutpat morbi
+            elementum vel euismod aliquam. Amet ultrices neque augue consectetur
+            purus phasellus. Ullamcorper lorem montes varius amet vestibulum
+            tellus facilisis consequat pretium. Et faucibus laoreet molestie
+            diam semper fames diam eget.
+          </p>
+          <button
+            type="submit"
+            className="flex items-center gap-1 w-fit px-3 py-1.5 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-md border border-none bg-[#ff595f] text-white font-semibold text-xs md:text-base lg:text-xl cursor-pointer hover:bg-[#f04450]"
+          >
+            Subscribe <Send className="w-3 h-3 md:w-5 md:h-5" />
+          </button>
+        </div>
+      </section>
+
+      {/* @param {{data: LatestPost}} props */}
+      <LatestSection data={blogData.latestPost} />
+
+      {/* @param {{data: NewTech}} props */}
+      <NewTechSection data={blogData.newTechnology} />
+
+      {/* @param {{data: Category}} props */}
+      <CategorySection data={blogData.categories} />
+
+      {/* @param {{data: Testimonial}} props */}
+      <TestimonialSection data={blogData.testimonials} />
+
+      {/* @param {{data: NewTech}} props */}
+      <NewTechSection data={blogData.newTechnologyRow2} />
+    </>
+  );
 }
